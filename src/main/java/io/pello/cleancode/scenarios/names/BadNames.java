@@ -41,7 +41,7 @@ public class BadNames {
 		}
 	}
 	
-	public void makeSomeNoise () {
+	public void makeSomeNoise (String par_name) {
 		int foo = 0;
 		float var = 66.6f;
 		int [] some = {6, 14,42};
@@ -54,6 +54,22 @@ public class BadNames {
 		String theCustomerName;
 		// abbr
 		int ivc; // integer variable counter? 
-		
+		int frsDyMnth;
+		int snWkYr;
+	
+		// encodings
+		// lblName, txtName,
+		String nameString;
+		int ageInt;
+
+		// member prefixes:
+		_name = par_name;
 	}
+	
+		private String _name;
+		
+		// Method that returns a greeting
+		public String bad_method () {
+			return "hello";
+		}
 }
