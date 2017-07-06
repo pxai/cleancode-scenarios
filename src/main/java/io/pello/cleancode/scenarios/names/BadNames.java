@@ -53,7 +53,7 @@ public class BadNames {
 		String cName;
 		String theCustomerName;
 		// abbr
-		int ivc; // integer variable counter?
+		int ivc; // integer variable counter? 
 		
 	}
 }
