@@ -6,7 +6,8 @@ public class BadMethods {
 	public static final int ERROR_CONTENT_EMPTY = -2;
 	private static final int ERROR_CONTENT_SHORT = -3;
 	private static final int CONTENT_OK = 1;
-
+	int deadVariable;
+	
 	public String print(String content) {
 		String result = "";
 		result += "<html><head></head><body>";
