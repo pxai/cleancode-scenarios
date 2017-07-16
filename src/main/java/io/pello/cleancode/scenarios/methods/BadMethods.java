@@ -7,7 +7,7 @@ public class BadMethods {
 	private static final int ERROR_CONTENT_SHORT = -3;
 	private static final int CONTENT_OK = 1;
 	int deadVariable;
-	
+
 	public String print(String content) {
 		String result = "";
 		result += "<html><head></head><body>";
@@ -16,6 +16,7 @@ public class BadMethods {
 
 		return result;
 	}
+
 
 	public String printFormat(String content, int format) {
 		String result = "";
@@ -33,16 +34,16 @@ public class BadMethods {
 		}
 		return result;
 	}
-	
+
 	public String print(String content, boolean isHTML5) {
 		String result;
-		
+
 		if (isHTML5) {
-			result = "<!DOCTYPE html>"; 
+			result = "<!DOCTYPE html>";
 		} else {
 			result = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" ";
 		}
-		
+
 		result += "<html><head>";
 		result += "</head><body>";
 		result += content;
@@ -52,7 +53,7 @@ public class BadMethods {
 	}
 
 	// Error codes and classes with codes are DEPENDENCY MAGNETS
-	public int printContent (String content) {
+	public int printContent(String content) {
 		if (null == content) {
 			return ERROR_CONTENT_NULL;
 		} else if (content.trim().equals("")) {
